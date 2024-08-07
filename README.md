@@ -1,6 +1,8 @@
 # Podcaster App
 Podcaster is an application builded in a Hexagonal architecture which is connected with Apple's Podcasts API.
 
+NOTE: There is an issue in our service folder which is right now inside infrastructure folder but it really should be on domain folder. CRA don't let me import files outside the src folder.
+
 ## Tech stack
 - React
 - Typescript

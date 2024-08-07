@@ -13,6 +13,13 @@ class PodcastEpisodePom {
     return await this.episodeCard.isVisible()
   }
 
+  async clickAudioButtonPlay() {
+    await this.page.locator('button').first().click()
+  }
+
+  async checkIfAudioIsPlaying(): Promise<boolean> {
+    return await this.page.locator('audio').first().isVisible()
+  }
 }
 
 export default PodcastEpisodePom

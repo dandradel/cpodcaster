@@ -57,8 +57,8 @@ To use this template
  - Episode
  - 
 ## Model
-<img width="990" alt="Captura de Pantalla 2023-08-03 a las 16 18 07" src="https://github.com/dandradel/podcaster/assets/10507504/4f5cb8bc-02c1-450f-80e8-71e701a381ed">
 
-<img width="1231" alt="Captura de Pantalla 2023-08-03 a las 16 49 39" src="https://github.com/dandradel/podcaster/assets/10507504/676c5950-d60a-4899-8f1d-0b1a5222a9b4">
+<img width="1231" alt="258149859-676c5950-d60a-4899-8f1d-0b1a5222a9b4" src="https://github.com/user-attachments/assets/5cd86f49-4612-4be3-8971-7de502250edc">
+<img width="990" alt="258149833-4f5cb8bc-02c1-450f-80e8-71e701a381ed" src="https://github.com/user-attachments/assets/aa3089f4-af8c-4f50-ae3e-4c318f251ef8">
 
 

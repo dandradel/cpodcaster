@@ -1,0 +1,47 @@
+{
+  "feed": {
+    "entry": [
+      {
+        "id": {
+          "attributes": {
+            "im:id": "1"
+          }
+        },
+        "title": {
+          "label": "Title 1"
+        },
+        "summary": {
+          "label": "Description 1"
+        },
+        "im:name": {
+          "label": "Podcast 1"
+        },
+        "im:image": [
+          {
+            "label": "https://picsum.photos/200/300"
+          },
+          {
+            "label": "https://picsum.photos/200/300"
+          },
+          {
+            "label": "https://picsum.photos/200/300"
+          }
+        ],
+        "im:artist": {
+          "label": "Author 1",
+          "attributes": {
+            "href": "https://podcasts.apple.com/us/artist/barstool-sports/1524874689?uo=2"
+          }
+        },
+        "im:releaseDate": {
+          "attributes": {
+            "label": "2020-01-01"
+          }
+        }
+      }
+    ],
+    "updated": {
+      "label": "2020-01-01"
+    }
+  }
+}

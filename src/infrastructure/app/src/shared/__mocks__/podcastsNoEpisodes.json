@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "name": "Podcast 1",
+    "author": "Author 1",
+    "summary": "Description 1",
+    "image": "https://picsum.photos/200/300",
+    "releaseDate": "2020-01-01",
+    "title": "Title 1",
+    "updated": "2020-01-01"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "title": "Episode 1",
+    "date": "2020-01-01",
+    "duration": 12312312,
+    "description": "Description 1",
+    "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    "episodeFileExtension": "string",
+    "episodeContentType": "string"
+  }
+]

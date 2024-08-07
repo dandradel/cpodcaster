@@ -1,0 +1,11 @@
+.podcast__image {
+  border-radius: 50%;
+  height: 120px;
+  object-fit: cover;
+  object-position: center;
+  width: 120px;
+  z-index: 1;
+  position: absolute;
+  bottom: 100px;
+  left: 74px;
+}

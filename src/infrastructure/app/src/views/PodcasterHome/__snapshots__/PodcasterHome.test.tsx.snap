@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PodcasterHome renders PodcasterHome 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="MuiBox-root css-zyoky0"
+        data-testid="searcher-wrapper-testid"
+      >
+        <div
+          class="MuiFormControl-root MuiTextField-root css-x66ii1-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1pysi21-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r0:"
+            id=":r0:-label"
+          >
+            Filter podcasts...
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":r0:"
+              type="text"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-yjsfm1"
+              >
+                <span>
+                  Filter podcasts...
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-vkz45j-MuiChip-root"
+          data-testid="search-chip-number-testid"
+        >
+          <span
+            class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+          >
+            1
+          </span>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root css-170i8fq"
+        data-testid="podcasts-wrapper-testid"
+      >
+        <div
+          class="MuiBox-root css-cl0zsv"
+          data-testid="podcastCover-wrapper-testid"
+        >
+          <div
+            class="MuiBox-root css-0"
+            data-testid="podcastCover-container-testid"
+          >
+            <img
+              class="podcast__image"
+              data-testid="podcast-image-testid"
+              src="https://picsum.photos/200/300"
+            />
+            <div
+              class="MuiBox-root css-1av9gx5"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-18k87ye-MuiTypography-root"
+                data-testid="podcast-name-testid"
+              >
+                Podcast 1
+              </h6>
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-gutterBottom css-7ft05y-MuiTypography-root"
+                data-testid="podcast-author-testid"
+              >
+                Author 1
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiBox-root css-zyoky0"
+      data-testid="searcher-wrapper-testid"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root css-x66ii1-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1pysi21-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="false"
+          for=":r0:"
+          id=":r0:-label"
+        >
+          Filter podcasts...
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+            id=":r0:"
+            type="text"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-yjsfm1"
+            >
+              <span>
+                Filter podcasts...
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <div
+        class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-vkz45j-MuiChip-root"
+        data-testid="search-chip-number-testid"
+      >
+        <span
+          class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+        >
+          1
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiBox-root css-170i8fq"
+      data-testid="podcasts-wrapper-testid"
+    >
+      <div
+        class="MuiBox-root css-cl0zsv"
+        data-testid="podcastCover-wrapper-testid"
+      >
+        <div
+          class="MuiBox-root css-0"
+          data-testid="podcastCover-container-testid"
+        >
+          <img
+            class="podcast__image"
+            data-testid="podcast-image-testid"
+            src="https://picsum.photos/200/300"
+          />
+          <div
+            class="MuiBox-root css-1av9gx5"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-18k87ye-MuiTypography-root"
+              data-testid="podcast-name-testid"
+            >
+              Podcast 1
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-gutterBottom css-7ft05y-MuiTypography-root"
+              data-testid="podcast-author-testid"
+            >
+              Author 1
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "store": {
+    "@@observable": [Function],
+    "dispatch": [Function],
+    "getState": [Function],
+    "replaceReducer": [Function],
+    "subscribe": [Function],
+  },
+  "unmount": [Function],
+}
+`;

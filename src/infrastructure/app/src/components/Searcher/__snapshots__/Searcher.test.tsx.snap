@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Searcher renders Searcher 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-zyoky0"
+    data-testid="searcher-wrapper-testid"
+  >
+    <div
+      class="MuiFormControl-root MuiTextField-root css-x66ii1-MuiFormControl-root-MuiTextField-root"
+    >
+      <label
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1pysi21-MuiFormLabel-root-MuiInputLabel-root"
+        data-shrink="false"
+        for=":r0:"
+        id=":r0:-label"
+      >
+        Filter podcasts...
+      </label>
+      <div
+        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+      >
+        <input
+          aria-invalid="false"
+          class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+          id=":r0:"
+          type="text"
+          value=""
+        />
+        <fieldset
+          aria-hidden="true"
+          class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+        >
+          <legend
+            class="css-yjsfm1"
+          >
+            <span>
+              Filter podcasts...
+            </span>
+          </legend>
+        </fieldset>
+      </div>
+    </div>
+    <div
+      class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorPrimary MuiChip-filledPrimary css-vkz45j-MuiChip-root"
+      data-testid="search-chip-number-testid"
+    >
+      <span
+        class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"
+      >
+        1
+      </span>
+    </div>
+  </div>
+</div>
+`;

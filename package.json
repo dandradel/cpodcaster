@@ -5,7 +5,7 @@
   "scripts": {
     "start": "cd src/infrastructure/app && npm start",
     "build": "react-scripts build",
-    "test": "cd ./src/infrastructure/app && npm test ",
+    "test": "cd ./src/infrastructure/app && npm run test ",
     "test:playwright": "cd ./src/infrastructure/app && npm run test:playwright",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",

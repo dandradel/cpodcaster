@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import { NavigateFunction, useNavigate } from 'react-router-dom'
 import { Box, Typography } from '@mui/material'
-import { podcastBoxStyles, podcastCoverBoxStyles } from './utils'
+import { podcastBoxStyles, podcastCoverBoxStyles } from './styles'
 import './PodcastCover.styles.css'
 import { Podcast } from '../../../../../domain/models/Podcast'
 
@@ -14,9 +14,9 @@ function PodcastCover({ podcast }: PodcastCoverProps): React.ReactElement {
 
   const { name, author, image, id } = podcast
 
-  const handlePodcastClick = (): void => {
+  const handlePodcastClick = useCallback((): void => {
     navigate(`/podcast/${id}`)
-  }
+  }, [navigate, id])
 
   return (
     <Box sx={podcastBoxStyles} data-testid='podcastCover-wrapper-testid'>

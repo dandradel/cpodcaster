@@ -1,7 +1,7 @@
 import { Box } from '@mui/material'
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useMemo } from 'react'
 import PodcastCover from '../PodcastCover/PodcastCover'
-import { podcastsBoxStyles } from './utils'
+import { podcastsBoxStyles } from './styles'
 import { Podcast } from '../../../../../domain/models/Podcast'
 
 interface PodcastsProps {
@@ -13,13 +13,13 @@ function Podcasts({ podcasts }: PodcastsProps): ReactElement | null {
     return null
   }
 
-  const getPodcastsCover = (): ReactElement[] | undefined => {
+  const podcastsCover = useMemo((): ReactElement[] | undefined => {
     return podcasts?.map((podcast) => <PodcastCover key={podcast.id} podcast={podcast} />)
-  }
+  }, [podcasts])
 
   return (
     <Box sx={podcastsBoxStyles} data-testid='podcasts-wrapper-testid'>
-      {getPodcastsCover()}
+      {podcastsCover}
     </Box>
   )
 }

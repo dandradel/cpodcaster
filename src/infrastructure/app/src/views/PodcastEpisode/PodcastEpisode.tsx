@@ -8,7 +8,7 @@ import '../../components/PodcastCover/PodcastCover.styles.css'
 import Skeleton from '../../components/Skeleton/Skeleton'
 import useError from '../../shared/hooks/useError'
 import usePodcastById from '../../shared/hooks/usePodcastById'
-import { podcastDetailBoxStyles } from '../utils'
+import { podcastDetailBoxStyles } from '../PodcastDetail/styles'
 
 function PodcastEpisode(): ReactElement {
   const { podcastCardProps } = usePodcastById()

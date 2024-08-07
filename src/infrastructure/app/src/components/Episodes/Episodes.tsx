@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useCallback, useMemo } from 'react'
 import {
   Box,
   Table,
@@ -9,14 +9,13 @@ import {
   TableRow,
   Typography,
 } from '@mui/material'
-import './Episodes.styles.css'
 import {
   episodesBoxStyles,
   episodeNumberBoxStyles,
   episodesTableStyles,
   tableCellStyles,
   tableRowStyles,
-} from './utils'
+} from './styles'
 import { NavigateFunction, useNavigate, useParams } from 'react-router-dom'
 import { Episode } from '../../../../../domain/models/Episode'
 import { millisToMinutesAndSeconds, TableCellI, tableHeadCells } from './helpers'
@@ -29,12 +28,12 @@ function Episodes({ episodes }: EpisodesProps): ReactElement {
   const { podcastId } = useParams<{ podcastId: string }>()
   const navigate: NavigateFunction = useNavigate()
 
-  const handleEpisodeClick = (episode: Episode): void => {
+  const handleEpisodeClick = useCallback((episode: Episode): void => {
     const { id } = episode
     navigate(`/podcast/${podcastId}/episode/${id}`, { state: { episode } })
-  }
+  }, [navigate, podcastId])
 
-  const getEpisodes = (): ReactElement[] | undefined => {
+  const episodeRows = useMemo((): ReactElement[] | undefined => {
     return episodes?.map((episode: Episode) => {
       const { id, title, duration, date } = episode
       const episodeDate = new Date(date).toLocaleDateString()
@@ -61,9 +60,9 @@ function Episodes({ episodes }: EpisodesProps): ReactElement {
         </TableRow>
       )
     })
-  }
+  }, [episodes, handleEpisodeClick])
 
-  const getTableHeadCells = (): ReactElement[] => {
+  const getTableHeadCells = useMemo((): ReactElement[] => {
     return tableHeadCells.map((tableHeadCell: TableCellI) => {
       const { id, label }: TableCellI = tableHeadCell
       return (
@@ -72,7 +71,7 @@ function Episodes({ episodes }: EpisodesProps): ReactElement {
         </TableCell>
       )
     })
-  }
+  }, [])
 
   return (
     <Box sx={episodesBoxStyles} data-testid='episodes-wrapper-testid'>
@@ -85,9 +84,9 @@ function Episodes({ episodes }: EpisodesProps): ReactElement {
         <TableContainer>
           <Table data-testid='table-episodes-testid'>
             <TableHead>
-              <TableRow>{getTableHeadCells()}</TableRow>
+              <TableRow>{getTableHeadCells}</TableRow>
             </TableHead>
-            <TableBody>{getEpisodes()}</TableBody>
+            <TableBody>{episodeRows}</TableBody>
           </Table>
         </TableContainer>
       </Box>

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useCallback } from 'react'
 import { Box, Divider, Typography } from '@mui/material'
 import './PodcastCard.styles.css'
 import {
@@ -34,9 +34,9 @@ function PodcastCard({ podcastCard }: PodcastCardArgs): ReactElement {
     podcastId = '',
   } = podcastCard
 
-  const handlePodcastCardRedirectionClick = (): void => {
+  const handlePodcastCardRedirectionClick = useCallback((): void => {
     navigate(`/podcast/${podcastId}`)
-  }
+  }, [navigate, podcastId])
 
   return (
     <Box sx={podcastCardBoxStyles} data-testid='podcast-wrapper-testid'>

@@ -1,7 +1,6 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useMemo } from 'react'
 import { Box, Divider, Typography } from '@mui/material'
-import './Episode.styles.css'
-import { audioElementStyles, dividerEpisodeStyle, episodeBoxStyles } from './utils'
+import { audioElementStyles, dividerEpisodeStyle, episodeBoxStyles } from './styles'
 import { Episode as EpisodeI } from '../../../../../domain/models/Episode'
 
 export interface EpisodeProps {
@@ -12,10 +11,12 @@ function Episode({ episode }: EpisodeProps): ReactElement {
   const { title, description, audioUrl, episodeContentType, episodeFileExtension } =
     episode || ({} as EpisodeI)
 
-  const audioContentType: string =
+  const audioContentType = useMemo(() => (
     episodeContentType && episodeFileExtension
       ? `${episodeContentType}/${episodeFileExtension}`
       : 'audio/mpeg'
+  ), [episodeContentType, episodeFileExtension])
+
 
   return (
     <Box sx={episodeBoxStyles} data-testid='episode-wrapper-testid'>

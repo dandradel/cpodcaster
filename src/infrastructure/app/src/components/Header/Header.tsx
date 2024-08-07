@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import Box from '@mui/material/Box'
-import { headerBoxStyles } from './utils'
+import { headerBoxStyles } from './styles'
 import { Link } from 'react-router-dom'
 import './Header.styles.css'
 import { setEpisodes } from '../../store/reducers/episodesSlice'
@@ -12,11 +12,11 @@ function Header(): React.ReactElement {
   const dispatch = useDispatch()
   const { setErrorState } = useError()
 
-  const handleHeaderLinkClick = (): void => {
+  const handleHeaderLinkClick = useCallback((): void => {
     dispatch(setPodcastCard(null))
     dispatch(setEpisodes(null))
     setErrorState(null)
-  }
+  }, [dispatch, setErrorState])
 
   return (
     <Box sx={headerBoxStyles}>

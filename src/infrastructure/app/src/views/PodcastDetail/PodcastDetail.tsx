@@ -5,7 +5,7 @@ import Error from '../../components/Error/Error'
 import PodcastCard from '../../components/PodcastCard/PodcastCard'
 import '../../components/PodcastCover/PodcastCover.styles.css'
 import useError from '../../shared/hooks/useError'
-import { podcastDetailBoxStyles } from '../utils'
+import { podcastDetailBoxStyles } from './styles'
 import usePodcastById from '../../shared/hooks/usePodcastById'
 import Skeleton from '../../components/Skeleton/Skeleton'
 

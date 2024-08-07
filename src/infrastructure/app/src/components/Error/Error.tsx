@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 import Box from '@mui/material/Box'
 import { Alert } from '@mui/material'
-import { errorBoxStyles } from './utils'
+import { errorBoxStyles } from './styles'
 
 interface ErrorProps {
   message?: string

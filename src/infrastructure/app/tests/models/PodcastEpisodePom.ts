@@ -1,6 +1,6 @@
 import { expect, type Locator, type Page } from '@playwright/test'
 
-class PodcastEpisodePage {
+class PodcastEpisodePom {
   readonly page: Page
   readonly episodeName: Locator
   readonly episodeDescription: Locator
@@ -27,4 +27,4 @@ class PodcastEpisodePage {
   }
 }
 
-export default PodcastEpisodePage
+export default PodcastEpisodePom

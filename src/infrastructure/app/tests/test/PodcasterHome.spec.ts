@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
-import PodcasterHomePom  from "./models/PodcasterHomePom";
-import PodcastDetailPom  from "./models/PodcastDetailPom";
+import PodcasterHomePom  from "../models/PodcasterHomePom";
+import PodcastDetailPom  from "../models/PodcastDetailPom";
 
 test.beforeEach(async ({ page }) => {
     const podcasterHomePom = new PodcasterHomePom(page);

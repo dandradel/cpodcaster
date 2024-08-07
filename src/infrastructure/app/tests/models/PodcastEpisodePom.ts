@@ -1,30 +1,18 @@
-import { expect, type Locator, type Page } from '@playwright/test'
+import { type Locator, type Page } from '@playwright/test'
 
 class PodcastEpisodePom {
   readonly page: Page
-  readonly episodeName: Locator
-  readonly episodeDescription: Locator
-  readonly audioPodcast: Locator
+  readonly episodeCard: Locator
 
   constructor(page: Page) {
     this.page = page
-    this.episodeName = page.getByTestId('episode-name-testid')
-    this.episodeDescription = page.getByTestId('episode-description-testid')
-    this.audioPodcast = page.getByTestId('audio-podcast-testid')
+    this.episodeCard = page.getByTestId('episode-wrapper-testid')
   }
 
-  async verifyEpisodeName() {
-    await expect(this.episodeName).toBeVisible()
+  async checkIfEpisodeWrapperIsVisible(): Promise<boolean> {
+    return await this.episodeCard.isVisible()
   }
-  async verifyEpisodeDescription() {
-    await expect(this.episodeDescription).toBeVisible()
-  }
-  async verifyAudioPodcast() {
-    await expect(this.audioPodcast).toBeVisible()
-  }
-  async clickAudioPodcast() {
-    await this.audioPodcast.click()
-  }
+
 }
 
 export default PodcastEpisodePom
